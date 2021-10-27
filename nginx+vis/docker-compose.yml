@@ -19,7 +19,7 @@ services:
     - webserver
 
   visualizer:
-    imager: dockersamples/visualizer:stable
+    image: dockersamples/visualizer:stable
     ports:
     - "8888:8080"
     volumes:
