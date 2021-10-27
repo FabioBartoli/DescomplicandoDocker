@@ -11,13 +11,13 @@ services:
       update_config:
         parallelism: 1
         delay: 10s
-        order: start_first
+        order: start-first
       rollback_config:
         parallelism: 1
         delay: 10s
         failure_action: continue
         monitor: 60s
-        order: stop_first
+        order: stop-first
       restart_policy:
         condition: on-failure
   db:
