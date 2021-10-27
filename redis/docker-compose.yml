@@ -80,3 +80,5 @@ services:
 networks:
   frontend:
   backend:
+volumes:
+  db-data:
